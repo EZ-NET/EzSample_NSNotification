@@ -7,21 +7,39 @@
 //
 
 import Cocoa
+import ESNotification
 
-class ViewController: NSViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override var representedObject: AnyObject? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
+final class ViewController: NSViewController {
+	
+	let notificationCenter = NSNotificationCenter.defaultCenter()
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+	}
+	
+	@IBAction func postSampleNotification(sender:AnyObject) {
+		
+		let notification = NSNotification(name: ESSampleLegacyNotification, object: self, userInfo: nil)
+		
+		notificationCenter.postNotification(notification)
+	}
+	
+	@IBAction func postSampleNotificationUsingNamedNotification(sender:AnyObject) {
+		
+		NamedNotification(ESSampleLegacyNotification, object: self, userInfo: nil).post()
+	}
+	
+	@IBAction func postLocationChangedNotification(sender:AnyObject) {
+		
+		LocationChangedNotification(x:10, y:3).post()
+	}
+	
+	@IBAction func postLocationChangedNotificationViaNSNotification(sender:AnyObject) {
+		
+		let notification = LocationChangedNotification(x: 8, y: 2)
+		
+		NSNotificationCenter.defaultCenter().postNotification(notification.makeRawNotification())
+	}
 }
 

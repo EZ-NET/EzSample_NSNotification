@@ -1,0 +1,37 @@
+PODS:
+  - ESNotification (0.2.7):
+    - ESThread (~> 0.1.0)
+    - Swim (~> 1.4.0)
+  - ESThread (0.1.0)
+  - Swim (1.4.1-beta)
+
+DEPENDENCIES:
+  - ESNotification (from `https://github.com/EZ-NET/ESNotification.git`)
+  - ESThread (from `https://github.com/EZ-NET/ESThread.git`)
+  - Swim (from `https://github.com/EZ-NET/ESSwim.git`)
+
+EXTERNAL SOURCES:
+  ESNotification:
+    :git: https://github.com/EZ-NET/ESNotification.git
+  ESThread:
+    :git: https://github.com/EZ-NET/ESThread.git
+  Swim:
+    :git: https://github.com/EZ-NET/ESSwim.git
+
+CHECKOUT OPTIONS:
+  ESNotification:
+    :commit: eddba969bedc7613d2ec078beca607b0161069a4
+    :git: https://github.com/EZ-NET/ESNotification.git
+  ESThread:
+    :commit: 29242fca807acd20e5c307ccf3b62f636d1b9d0f
+    :git: https://github.com/EZ-NET/ESThread.git
+  Swim:
+    :commit: 66ab4cfb6c31506f4d38d9353bd7930a8ad1a3af
+    :git: https://github.com/EZ-NET/ESSwim.git
+
+SPEC CHECKSUMS:
+  ESNotification: da48dd7fa0b845744f4eed2961d3d9eed395c526
+  ESThread: f2731afb37cf63a3a56ec98f63fc10bcaf5d933d
+  Swim: 5d6b294188fd7ecde95450ca3e45e9d6db7df470
+
+COCOAPODS: 0.39.0.beta.5
