@@ -20,13 +20,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ESNotification:
-    :commit: eddba969bedc7613d2ec078beca607b0161069a4
+    :commit: 634a121d97d629c47e528beaf12894388df2f5ab
     :git: https://github.com/EZ-NET/ESNotification.git
   ESThread:
     :commit: 29242fca807acd20e5c307ccf3b62f636d1b9d0f
     :git: https://github.com/EZ-NET/ESThread.git
   Swim:
-    :commit: 66ab4cfb6c31506f4d38d9353bd7930a8ad1a3af
+    :commit: 7a84710cdf6f6e6851dac83103fdce34279449bc
     :git: https://github.com/EZ-NET/ESSwim.git
 
 SPEC CHECKSUMS:

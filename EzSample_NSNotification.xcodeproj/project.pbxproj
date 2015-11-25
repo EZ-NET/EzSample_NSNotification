@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12B7FE31C05C41700E9F494 /* TestViewController+NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B7FE21C05C41700E9F494 /* TestViewController+NotificationObserver.swift */; };
 		B19DA9561C0417A2000881AE /* LocationChangedNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19DA9551C0417A2000881AE /* LocationChangedNotification.swift */; };
 		B1B9EDE21BFF1371001EC4BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B9EDE11BFF1371001EC4BA /* AppDelegate.swift */; };
 		B1B9EDE41BFF1371001EC4BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B9EDE31BFF1371001EC4BA /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		6071F10A5FB8A6F790316D77 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6463DEB0DE3BD97D0EA889A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B12B7FE21C05C41700E9F494 /* TestViewController+NotificationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TestViewController+NotificationObserver.swift"; sourceTree = "<group>"; };
 		B19DA9551C0417A2000881AE /* LocationChangedNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationChangedNotification.swift; sourceTree = "<group>"; };
 		B19DA9571C0417CF000881AE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		B1B9EDDE1BFF1371001EC4BA /* EzSample_NSNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EzSample_NSNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 				B1B9EDE31BFF1371001EC4BA /* ViewController.swift */,
 				B19DA9551C0417A2000881AE /* LocationChangedNotification.swift */,
 				B1B9EDF01BFF51B8001EC4BA /* TestViewController.swift */,
+				B12B7FE21C05C41700E9F494 /* TestViewController+NotificationObserver.swift */,
 				B1B9EDE51BFF1371001EC4BA /* Assets.xcassets */,
 				B1B9EDE71BFF1371001EC4BA /* Main.storyboard */,
 				B1B9EDEA1BFF1371001EC4BA /* Info.plist */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1B9EDE41BFF1371001EC4BA /* ViewController.swift in Sources */,
+				B12B7FE31C05C41700E9F494 /* TestViewController+NotificationObserver.swift in Sources */,
 				B19DA9561C0417A2000881AE /* LocationChangedNotification.swift in Sources */,
 				B1B9EDF11BFF51B8001EC4BA /* TestViewController.swift in Sources */,
 				B1B9EDE21BFF1371001EC4BA /* AppDelegate.swift in Sources */,
