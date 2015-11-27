@@ -35,6 +35,8 @@ final class TestViewController : NSViewController {
 		notificationCenter.addObserver(self, selector: "sampleNotificationReceived:", name: ESSampleLegacyNotification, object: nil)
 		notificationCenter.addObserver(self, selector: "locationChangedNotificationReceived:", name: LocationChangedNotification.notificationIdentifier, object: nil)
 		
+		self.performSelector("observingByObjC")
+		
 		LocationChangedNotification.observeBy(self) { notification in
 			
 			self.print("Received by ESNotification: \(notification)")
@@ -49,6 +51,8 @@ final class TestViewController : NSViewController {
 	override func viewWillDisappear() {
 		
 		super.viewWillDisappear()
+		
+		self.performSelector("ReleaseObservingByObjC")
 		
 		notificationCenter.removeObserver(self, name: ESSampleLegacyNotification, object: nil)
 	}

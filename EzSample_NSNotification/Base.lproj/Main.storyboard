@@ -670,11 +670,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="EzSample_NSNotification" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="782" height="428"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WfC-yt-QPh">
-                                <rect key="frame" x="14" y="222" width="452" height="32"/>
+                                <rect key="frame" x="14" y="380" width="377" height="32"/>
                                 <animations/>
                                 <buttonCell key="cell" type="push" title="Sample Notification via NSNotificationCenter" bezelStyle="rounded" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wit-ga-v7V">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -685,7 +685,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JF0-8c-RRU">
-                                <rect key="frame" x="14" y="134" width="452" height="32"/>
+                                <rect key="frame" x="14" y="347" width="377" height="32"/>
                                 <animations/>
                                 <buttonCell key="cell" type="push" title="Location Change Notification via NSNotificationCenter" bezelStyle="rounded" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="A60-LS-rqV">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -696,7 +696,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ti-Ds-K8d">
-                                <rect key="frame" x="14" y="101" width="452" height="32"/>
+                                <rect key="frame" x="391" y="347" width="377" height="32"/>
                                 <animations/>
                                 <buttonCell key="cell" type="push" title="Location Change Notification via ESNotification" bezelStyle="rounded" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bs5-61-f8m">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -707,7 +707,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLb-OW-DqD">
-                                <rect key="frame" x="14" y="189" width="452" height="32"/>
+                                <rect key="frame" x="391" y="380" width="377" height="32"/>
                                 <animations/>
                                 <buttonCell key="cell" type="push" title="Sample Notification via ESNotification" bezelStyle="rounded" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="G9W-7y-Iyq">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -717,13 +717,71 @@
                                     <action selector="postSampleNotificationUsingNamedNotification:" target="XfG-lQ-9wD" id="0G3-pF-4hK"/>
                                 </connections>
                             </button>
+                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-Ug-Aqk">
+                                <rect key="frame" x="20" y="20" width="742" height="253"/>
+                                <clipView key="contentView" ambiguous="YES" id="QtZ-AZ-z8V">
+                                    <rect key="frame" x="1" y="1" width="740" height="251"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView ambiguous="YES" editable="NO" importsGraphics="NO" richText="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="KAU-Dy-PcZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="740" height="251"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="740" height="251"/>
+                                            <size key="maxSize" width="961" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="740" height="251"/>
+                                            <size key="maxSize" width="961" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <animations/>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="4cq-nK-aKz">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="WgN-0p-7r1">
+                                    <rect key="frame" x="725" y="1" width="16" height="251"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </scroller>
+                            </scrollView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CEg-Tk-0wp">
+                                <rect key="frame" x="14" y="273" width="72" height="32"/>
+                                <animations/>
+                                <buttonCell key="cell" type="push" title="Clear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Fa8-Me-saT">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clearTextView:" target="XfG-lQ-9wD" id="zh5-dS-kxp"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wNI-wi-AmF">
+                                <rect key="frame" x="14" y="314" width="377" height="32"/>
+                                <animations/>
+                                <buttonCell key="cell" type="push" title="ESObjCNotification by Objective-C" bezelStyle="rounded" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Tz5-4H-UAh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="postNotificationByObjC:" target="XfG-lQ-9wD" id="XJT-uJ-9OK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                     </view>
+                    <connections>
+                        <outlet property="printTextView" destination="KAU-Dy-PcZ" id="Ef6-7u-Gsw"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="58" y="734"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="ePo-MC-rrb">
@@ -762,6 +820,17 @@
                                     <segue destination="B8D-0N-5wS" kind="show" id="6fz-aN-vvQ"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4bn-Bi-mQc">
+                                <rect key="frame" x="88" y="380" width="72" height="32"/>
+                                <animations/>
+                                <buttonCell key="cell" type="push" title="Clear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Y9g-5d-PPv">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clearTextView:" target="b9S-Si-b63" id="eMI-RD-rk1"/>
+                                </connections>
+                            </button>
                             <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA1-Re-hbE">
                                 <rect key="frame" x="20" y="20" width="955" height="347"/>
                                 <clipView key="contentView" ambiguous="YES" id="Pm0-ik-3bs">
@@ -796,17 +865,6 @@
                                     <animations/>
                                 </scroller>
                             </scrollView>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4bn-Bi-mQc">
-                                <rect key="frame" x="88" y="380" width="72" height="32"/>
-                                <animations/>
-                                <buttonCell key="cell" type="push" title="Clear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Y9g-5d-PPv">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="clearTextView:" target="b9S-Si-b63" id="eMI-RD-rk1"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <animations/>
                     </view>

@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B12B7FE31C05C41700E9F494 /* TestViewController+NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B7FE21C05C41700E9F494 /* TestViewController+NotificationObserver.swift */; };
+		B12B7FE31C05C41700E9F494 /* ViewController+NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12B7FE21C05C41700E9F494 /* ViewController+NotificationObserver.swift */; };
+		B15B63541C07EC660091A49E /* ESObjCNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = B15B63531C07EC660091A49E /* ESObjCNotification.m */; };
+		B15B635F1C0823AB0091A49E /* TestViewController+ObjCPost.m in Sources */ = {isa = PBXBuildFile; fileRef = B15B635E1C0823AB0091A49E /* TestViewController+ObjCPost.m */; };
+		B15B63621C082DE90091A49E /* ViewController+ObjCPost.m in Sources */ = {isa = PBXBuildFile; fileRef = B15B63611C082DE90091A49E /* ViewController+ObjCPost.m */; };
 		B19DA9561C0417A2000881AE /* LocationChangedNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19DA9551C0417A2000881AE /* LocationChangedNotification.swift */; };
 		B1B9EDE21BFF1371001EC4BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B9EDE11BFF1371001EC4BA /* AppDelegate.swift */; };
 		B1B9EDE41BFF1371001EC4BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B9EDE31BFF1371001EC4BA /* ViewController.swift */; };
@@ -20,7 +23,14 @@
 /* Begin PBXFileReference section */
 		6071F10A5FB8A6F790316D77 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6463DEB0DE3BD97D0EA889A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		B12B7FE21C05C41700E9F494 /* TestViewController+NotificationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TestViewController+NotificationObserver.swift"; sourceTree = "<group>"; };
+		B12B7FE21C05C41700E9F494 /* ViewController+NotificationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+NotificationObserver.swift"; sourceTree = "<group>"; };
+		B15B63511C07EC660091A49E /* EzSample_NSNotification-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EzSample_NSNotification-Bridging-Header.h"; sourceTree = "<group>"; };
+		B15B63521C07EC660091A49E /* ESObjCNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESObjCNotification.h; sourceTree = "<group>"; };
+		B15B63531C07EC660091A49E /* ESObjCNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESObjCNotification.m; sourceTree = "<group>"; };
+		B15B635D1C0823AB0091A49E /* TestViewController+ObjCPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestViewController+ObjCPost.h"; sourceTree = "<group>"; };
+		B15B635E1C0823AB0091A49E /* TestViewController+ObjCPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestViewController+ObjCPost.m"; sourceTree = "<group>"; };
+		B15B63601C082DE90091A49E /* ViewController+ObjCPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+ObjCPost.h"; sourceTree = "<group>"; };
+		B15B63611C082DE90091A49E /* ViewController+ObjCPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+ObjCPost.m"; sourceTree = "<group>"; };
 		B19DA9551C0417A2000881AE /* LocationChangedNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationChangedNotification.swift; sourceTree = "<group>"; };
 		B19DA9571C0417CF000881AE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		B1B9EDDE1BFF1371001EC4BA /* EzSample_NSNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EzSample_NSNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,12 +97,19 @@
 			children = (
 				B1B9EDE11BFF1371001EC4BA /* AppDelegate.swift */,
 				B1B9EDE31BFF1371001EC4BA /* ViewController.swift */,
+				B15B63601C082DE90091A49E /* ViewController+ObjCPost.h */,
+				B15B63611C082DE90091A49E /* ViewController+ObjCPost.m */,
+				B12B7FE21C05C41700E9F494 /* ViewController+NotificationObserver.swift */,
 				B19DA9551C0417A2000881AE /* LocationChangedNotification.swift */,
 				B1B9EDF01BFF51B8001EC4BA /* TestViewController.swift */,
-				B12B7FE21C05C41700E9F494 /* TestViewController+NotificationObserver.swift */,
+				B15B635D1C0823AB0091A49E /* TestViewController+ObjCPost.h */,
+				B15B635E1C0823AB0091A49E /* TestViewController+ObjCPost.m */,
+				B15B63521C07EC660091A49E /* ESObjCNotification.h */,
+				B15B63531C07EC660091A49E /* ESObjCNotification.m */,
 				B1B9EDE51BFF1371001EC4BA /* Assets.xcassets */,
 				B1B9EDE71BFF1371001EC4BA /* Main.storyboard */,
 				B1B9EDEA1BFF1371001EC4BA /* Info.plist */,
+				B15B63511C07EC660091A49E /* EzSample_NSNotification-Bridging-Header.h */,
 			);
 			path = EzSample_NSNotification;
 			sourceTree = "<group>";
@@ -219,9 +236,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1B9EDE41BFF1371001EC4BA /* ViewController.swift in Sources */,
-				B12B7FE31C05C41700E9F494 /* TestViewController+NotificationObserver.swift in Sources */,
+				B12B7FE31C05C41700E9F494 /* ViewController+NotificationObserver.swift in Sources */,
+				B15B63621C082DE90091A49E /* ViewController+ObjCPost.m in Sources */,
+				B15B635F1C0823AB0091A49E /* TestViewController+ObjCPost.m in Sources */,
 				B19DA9561C0417A2000881AE /* LocationChangedNotification.swift in Sources */,
 				B1B9EDF11BFF51B8001EC4BA /* TestViewController.swift in Sources */,
+				B15B63541C07EC660091A49E /* ESObjCNotification.m in Sources */,
 				B1B9EDE21BFF1371001EC4BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,11 +345,14 @@
 			baseConfigurationReference = CCE597253B7C4A488CB4BE6B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EzSample_NSNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.EzSample-NSNotification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EzSample_NSNotification/EzSample_NSNotification-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -338,11 +361,13 @@
 			baseConfigurationReference = 6463DEB0DE3BD97D0EA889A6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EzSample_NSNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.EzSample-NSNotification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EzSample_NSNotification/EzSample_NSNotification-Bridging-Header.h";
 			};
 			name = Release;
 		};

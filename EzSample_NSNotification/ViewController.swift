@@ -11,6 +11,19 @@ import ESNotification
 
 final class ViewController: NSViewController {
 	
+	@IBOutlet private var printTextView: NSTextView!
+	
+	func print(text: String) {
+		
+		let message = "\(NSDate()): \(text)"
+		self.printTextView.string = "\(message)\n\(self.printTextView.string!)"
+	}
+	
+	@IBAction func clearTextView(sender:AnyObject) {
+		
+		self.printTextView.string = ""
+	}
+	
 	let notificationCenter = NSNotificationCenter.defaultCenter()
 	
 	override func viewDidLoad() {
@@ -40,6 +53,11 @@ final class ViewController: NSViewController {
 		let notification = LocationChangedNotification(x: 8, y: 2)
 		
 		NSNotificationCenter.defaultCenter().postNotification(notification.makeRawNotification())
+	}
+	
+	@IBAction func postNotificationByObjC(sender:AnyObject) {
+		
+		self.performSelector("postNotificationByObjC")
 	}
 }
 
